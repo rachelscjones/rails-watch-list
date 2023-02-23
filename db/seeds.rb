@@ -27,7 +27,7 @@ movies['results'].take(5).each do |movie|
   )
 end
 
-puts 'seed movies created!'
+puts "seeded #{Movie.count} movies created!"
 
 # ALTERNATIVE SOLUTION
 
