@@ -16,7 +16,7 @@ puts 'destroyed any previously created movies'
 url = "http://tmdb.lewagon.com/movie/top_rated"
 
 movies = JSON.parse(URI.open("#{url}").read)
-movies['results'].take(5).each do |movie|
+movies['results'].take(10).each do |movie|
   # puts movie
   # puts "creating #{movie['original_title']}"
   Movie.create(
